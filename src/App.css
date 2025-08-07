@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  background-color: rgb(10, 10, 10);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.main {
+  display: flex;
+  flex-grow: 1; /* Ocupa el espacio restante después del Navbar */
+}
+
+.content {
+  flex-grow: 1;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed; /* Mantiene el overlay fijo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  display: flex; /* Se asegura de que sea un contenedor flexible */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  z-index: 1050; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Modal */
+.modal {
+  background: #282c34; /* Color de fondo del modal */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Esquinas redondeadas */
+  width: 300px; /* Ancho fijo */
+  text-align: center; /* Centra el texto */
+  z-index: 1060; /* Asegúrate de que esté por encima del overlay */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Agrega sombra para destacarlo */
+}
+
+/* Botón Cerrar */
+.close-btn {
+  background: red; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 8px 12px; /* Relleno */
+  cursor: pointer; /* Cambiar el cursor */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+/* Botón de Submit */
+.btn-submit {
+  background: #61dafb; /* Color de fondo para el botón Submit */
+  color: black; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 8px 12px; /* Relleno */
+  cursor: pointer; /* Cambiar el cursor */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+
