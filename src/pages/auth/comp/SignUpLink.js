@@ -30,6 +30,8 @@ const SignUpLink = datos => {
             .catch(err =>
                 alert("You couldn't login, maybe you don't have an account?")
             )
+
+            window.location.reload();
             
         } catch(err) {
             alert('Hay algo raro en: ', err);
@@ -40,5 +42,6 @@ const SignUpLink = datos => {
         <TryItLink className="button" onClick={llamadaAlPost} to="/" activeStyle>SignUp</TryItLink>
     );
 }
+
 
 export default SignUpLink;
