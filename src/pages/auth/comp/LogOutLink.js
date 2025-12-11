@@ -6,11 +6,13 @@ const LogOutLink = datos => {
 
     const llamadaAlPost = async () => {
         localStorage.removeItem('token');
+        window.location.reload();
     };
 
     return (
         <TryItLink className="button" onClick={llamadaAlPost} to="/" activeStyle>LogOut</TryItLink>
     );
 }
+
 
 export default LogOutLink;
